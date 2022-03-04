@@ -1,7 +1,7 @@
 import Modal from "../UI/Modal"
 import classes from "./Cart.module.css"
 
-const cartItems = [
+const DUMMY_CART = [
   {
     id: "m1",
     name: "Sushi",
@@ -31,14 +31,7 @@ const cartItems = [
 const Cart = props => {
   const cartItems = (
     <ul className={classes["cart-items"]}>
-      {[
-        {
-          id: "m1",
-          name: "Sushi",
-          description: "Finest fish and veggies",
-          price: 22.99,
-        },
-      ].map(item => (
+      {DUMMY_CART.map(item => (
         <li>{item.name}</li>
       ))}
     </ul>
