@@ -1,4 +1,4 @@
-import CartIcon from "../../Cart/CartIcon"
+import CartIcon from "./CartIcon"
 import classes from "./HeaderCartButton.module.css"
 
 const HeaderCartButton = props => {
