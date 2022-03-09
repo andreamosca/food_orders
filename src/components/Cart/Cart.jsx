@@ -6,7 +6,9 @@ import CartItem from "./CartItem"
 
 const Cart = props => {
   const cartCtx = useContext(CartContext)
-  const cartItemRemoveHandler = id => {}
+  const cartItemRemoveHandler = id => {
+    cartCtx.removeItem(id)
+  }
   const cartItemAddHandler = item => {
     cartCtx.addItem({ ...item, amount: 1 })
   }
